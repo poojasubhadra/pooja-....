@@ -1,0 +1,16 @@
+NumList=[]
+positive=[]
+negative=[]
+Number=int(input('enter number of list numbers:'))
+for i in range(1,Number+1):
+    value=int(input('enter the value of %d element:'%i))
+    NumList.append(value)
+
+for j in range(Number):
+    if(NumList[j]>0):
+        positive.append(NumList[j])
+    else:
+        negative.append(NumList[j])
+
+print('element in positive list is:',positive)
+print('element in negative list is:',negative)
